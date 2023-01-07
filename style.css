@@ -1,0 +1,530 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: #000942;
+  padding-left: 11%;
+  padding-right: 2%;
+  position: relative;
+  background-image: url(./Img/Koushik_img.png);
+  background-size: 38%;
+  background-repeat: no-repeat;
+  background-position: 95% 100%;
+}
+.header .top_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0 15px;
+  border-bottom: 1px solid #bababa;
+}
+.header .top_nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.header .top_nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+.header .top_nav ul li a:hover {
+  font-size: 1.2rem;
+  border: 0.1rem solid #fff;
+  background-color: #e91e63;
+  padding: 1rem;
+}
+.header .top_nav .btn.btn2 {
+  background: #e91e63;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header .side_nav {
+  position: fixed;
+  left: 0;
+  top: -3rem;
+  width: 7rem;
+  height: 110vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+  background: linear-gradient(#00bcd4, #e91e63, #3f51b5, #00bcd4);
+  background-size: 100% 500%;
+  background-position: 0 40%;
+}
+.header .side_nav .logo img {
+  width: 6rem;
+  cursor: pointer;
+}
+.header .side_nav .project {
+  transform: rotate(-90deg) translateX(50%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.header .side_nav .project a {
+  text-decoration: none;
+  color: #fff;
+}
+.header .side_nav:hover {
+  animation: backcolor 20s linear infinite reverse;
+}
+.header .front_text {
+  margin-top: 20%;
+  font-size: 1rem;
+  color: #fff;
+}
+.header .front_text h4 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #e91e63;
+  position: relative;
+  -webkit-animation: h4left 5s;
+          animation: h4left 5s;
+}
+@-webkit-keyframes h4left {
+  from {
+    left: -20rem;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes h4left {
+  from {
+    left: -20rem;
+  }
+  to {
+    right: 0;
+  }
+}
+.header .front_text h2 {
+  font-weight: 600;
+  font-size: 5rem;
+}
+.header .front_text h3 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.header .front_text p {
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+@-webkit-keyframes backcolor {
+  0% {
+    background-position: 0 0%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+@keyframes backcolor {
+  0% {
+    background-position: 0 0%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+.about_me {
+  height: 45rem;
+  width: 100%;
+  background: #000942;
+  display: flex;
+  justify-content: space-between;
+}
+.about_me .my_img {
+  top: 8rem;
+  height: 30rem;
+  width: 30rem;
+  background: rgb(255, 222, 8);
+  border: 0.3rem solid #fff;
+  position: relative;
+  left: 10rem;
+}
+.about_me .somethin_about_me {
+  top: 5rem;
+  height: 30rem;
+  width: 30rem;
+  position: relative;
+  right: 15rem;
+}
+.about_me .somethin_about_me h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 2rem;
+}
+.about_me .somethin_about_me h2::after {
+  content: " ";
+  width: 45%;
+  height: 2px;
+  background: #e91e63;
+  position: absolute;
+  top: 3.2rem;
+  left: 0;
+}
+.about_me .somethin_about_me p {
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 1rem;
+  word-spacing: 0.2rem;
+}
+.about_me .somethin_about_me p span {
+  color: #ffea00;
+}
+.about_me .somethin_about_me p span:hover {
+  color: #e91e63;
+}
+.about_me .somethin_about_me .recent ul {
+  margin-top: 1rem;
+}
+.about_me .somethin_about_me .recent ul span {
+  margin-left: 1.2rem;
+  color: #e91e63;
+}
+.about_me .somethin_about_me .recent ul li {
+  line-height: 2rem;
+  margin-left: 1.2rem;
+  list-style: none;
+  color: #fff;
+}
+
+.skill {
+  background: #000942;
+  width: 100%;
+  height: 350vh;
+}
+.skill h2 {
+  font-size: 2rem;
+  margin-left: 50rem;
+  color: #fff;
+}
+.skill .timeline {
+  margin-left: 20rem;
+  max-width: 120rem;
+}
+.skill .timeline .left-container {
+  left: 0;
+}
+.skill .timeline .right-container {
+  left: 40.5%;
+}
+.skill .timeline .container {
+  margin-top: 2rem;
+  padding: 1rem 5rem;
+  position: relative;
+  width: 35rem;
+  max-width: 100rem;
+}
+.skill .timeline .container .text-box1 {
+  padding: 2rem 3rem;
+  background: #fff;
+  position: relative;
+  border-radius: 0.6rem;
+  font-size: 15px;
+}
+.skill .timeline .container .text-box1 h1 {
+  font-size: 3rem;
+  position: relative;
+  left: 5rem;
+}
+.skill .timeline .container .text-box1 img {
+  position: relative;
+  height: 15rem;
+  width: 20rem;
+}
+.skill .timeline .container .text-box1 .left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 9rem;
+  z-index: 1;
+  border-top: 2.5rem solid transparent;
+  border-bottom: 2.5rem solid transparent;
+  border-left: 2.5rem solid #fff;
+  right: -2.5rem;
+}
+.skill .timeline .container .text-box2 {
+  padding: 2rem 3rem;
+  background: #fff;
+  position: relative;
+  border-radius: 0.6rem;
+  font-size: 15px;
+}
+.skill .timeline .container .text-box2 h1 {
+  font-size: 3rem;
+  position: relative;
+  left: 35%;
+}
+.skill .timeline .container .text-box2 img {
+  height: 15rem;
+  width: 18rem;
+  position: relative;
+}
+.skill .timeline .container .text-box2 .right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 9rem;
+  z-index: 1;
+  border-top: 2.5rem solid transparent;
+  border-bottom: 2.5rem solid transparent;
+  border-right: 2.5rem solid #fff;
+  left: -2.5rem;
+}
+.skill .timeline .container .text-box3 {
+  padding: 2rem 3rem;
+  background: #fff;
+  position: relative;
+  border-radius: 0.6rem;
+  font-size: 15px;
+}
+.skill .timeline .container .text-box3 h1 {
+  font-size: 3rem;
+  position: relative;
+  left: 3rem;
+}
+.skill .timeline .container .text-box3 img {
+  height: 15rem;
+  width: 20rem;
+  position: relative;
+  right: 0.5rem;
+}
+.skill .timeline .container .text-box3 .left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 9rem;
+  z-index: 1;
+  border-top: 2.5rem solid transparent;
+  border-bottom: 2.5rem solid transparent;
+  border-left: 2.5rem solid #fff;
+  right: -2.5rem;
+}
+.skill .timeline .container .text-box4 {
+  padding: 2rem 3rem;
+  background: #fff;
+  position: relative;
+  border-radius: 0.6rem;
+  font-size: 15px;
+}
+.skill .timeline .container .text-box4 h1 {
+  font-size: 3rem;
+  position: relative;
+  left: 35%;
+}
+.skill .timeline .container .text-box4 img {
+  height: 15rem;
+  width: 17rem;
+  position: relative;
+}
+.skill .timeline .container .text-box4 .right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 9rem;
+  z-index: 1;
+  border-top: 2.5rem solid transparent;
+  border-bottom: 2.5rem solid transparent;
+  border-right: 2.5rem solid #fff;
+  left: -2.5rem;
+}
+.skill .timeline .container .text-box5 {
+  padding: 2rem 3rem;
+  background: #fff;
+  position: relative;
+  border-radius: 0.6rem;
+  font-size: 15px;
+}
+.skill .timeline .container .text-box5 h1 {
+  font-size: 3rem;
+  position: relative;
+  left: 35%;
+}
+.skill .timeline .container .text-box5 img {
+  height: 15rem;
+  width: 18rem;
+  position: relative;
+}
+.skill .timeline .container .text-box5 .left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 9rem;
+  z-index: 1;
+  border-top: 2.5rem solid transparent;
+  border-bottom: 2.5rem solid transparent;
+  border-left: 2.5rem solid #fff;
+  right: -2.5rem;
+}
+.skill .timeline .container .text-box6 {
+  padding: 2rem 3rem;
+  background: #fff;
+  position: relative;
+  border-radius: 0.6rem;
+  font-size: 15px;
+}
+.skill .timeline .container .text-box6 h1 {
+  font-size: 3rem;
+  position: relative;
+  left: 3rem;
+}
+.skill .timeline .container .text-box6 img {
+  height: 15rem;
+  width: 18rem;
+  position: relative;
+}
+.skill .timeline .container .text-box6 .right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 9rem;
+  z-index: 1;
+  border-top: 2.5rem solid transparent;
+  border-bottom: 2.5rem solid transparent;
+  border-right: 2.5rem solid #fff;
+  left: -2.5rem;
+}
+.skill .timeline::after {
+  content: "";
+  position: absolute;
+  width: 0.3rem;
+  height: 332vh;
+  background: #fff;
+  top: 96.9rem;
+  left: 50%;
+  margin-left: 5rem;
+  z-index: 1;
+  -webkit-animation: moveline 10s linear forwards;
+          animation: moveline 10s linear forwards;
+}
+@-webkit-keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 332vh;
+  }
+}
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 332vh;
+  }
+}
+
+#contact {
+  background: #000942;
+  width: 100%;
+  height: 70vh;
+}
+#contact .container {
+  margin-left: 18rem;
+}
+#contact .container .row {
+  display: flex;
+}
+#contact .container .row .contact-left {
+  flex-basis: 35%;
+}
+#contact .container .row .contact-left h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+#contact .container .row .contact-left h1::before {
+  content: "";
+  background-color: #fff;
+  width: 45%;
+  height: 2px;
+  z-index: -1;
+}
+#contact .container .row .contact-left p {
+  color: #fff;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+#contact .container .row .contact-left p i {
+  color: #e91e63;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+#contact .container .row .contact-left .social-icons {
+  margin-top: 3rem;
+}
+#contact .container .row .contact-left .social-icons a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  color: #fff;
+  display: inline-block;
+  transition: transform 1.5s;
+}
+#contact .container .row .contact-left .social-icons a:hover {
+  color: #e91e63;
+  transform: rotate(360deg);
+}
+#contact .container .row .contact-right {
+  flex-basis: 60%;
+}
+#contact .container .row .contact-right form {
+  width: 100%;
+  margin-top: 3rem;
+}
+#contact .container .row .contact-right form input, #contact .container .row .contact-right form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #cbccd1;
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+  margin: 0.5rem 0;
+  color: #000942;
+  font-size: 1.2rem;
+}
+#contact .container .row .contact-right form button {
+  background: #e91e63;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 20rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+#footer {
+  background: #010d5b;
+  width: 100%;
+  height: 7vh;
+}
+#footer .copyright {
+  margin-left: 48%;
+}
+#footer .copyright p {
+  color: #fff;
+  padding-top: 1rem;
+}/*# sourceMappingURL=style.css.map */
