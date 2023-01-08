@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
-.header {
+.maincontainer {
+  background: #000942;
+  width: 100%;
+}
+.maincontainer .header {
   width: 100%;
   height: 100vh;
   background: #000942;
@@ -16,33 +20,33 @@
   background-repeat: no-repeat;
   background-position: 95% 100%;
 }
-.header .top_nav {
+.maincontainer .header .top_nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px 0 15px;
   border-bottom: 1px solid #bababa;
 }
-.header .top_nav ul li {
+.maincontainer .header .top_nav ul li {
   list-style: none;
   display: inline-block;
   margin-right: 3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.header .top_nav ul li a {
+.maincontainer .header .top_nav ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
   transition: 0.5s;
 }
-.header .top_nav ul li a:hover {
+.maincontainer .header .top_nav ul li a:hover {
   font-size: 1.2rem;
   border: 0.1rem solid #fff;
   background-color: #e91e63;
   padding: 1rem;
 }
-.header .top_nav .btn.btn2 {
+.maincontainer .header .top_nav .btn.btn2 {
   background: #e91e63;
   color: #fff;
   border: 0;
@@ -52,7 +56,7 @@
   cursor: pointer;
   text-decoration: none;
 }
-.header .side_nav {
+.maincontainer .header .side_nav {
   position: fixed;
   left: 0;
   top: -3rem;
@@ -67,29 +71,29 @@
   background-size: 100% 500%;
   background-position: 0 40%;
 }
-.header .side_nav .logo img {
+.maincontainer .header .side_nav .logo img {
   width: 6rem;
   cursor: pointer;
 }
-.header .side_nav .project {
+.maincontainer .header .side_nav .project {
   transform: rotate(-90deg) translateX(50%);
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
-.header .side_nav .project a {
+.maincontainer .header .side_nav .project a {
   text-decoration: none;
   color: #fff;
 }
-.header .side_nav:hover {
+.maincontainer .header .side_nav:hover {
   animation: backcolor 20s linear infinite reverse;
 }
-.header .front_text {
+.maincontainer .header .front_text {
   margin-top: 20%;
   font-size: 1rem;
   color: #fff;
 }
-.header .front_text h4 {
+.maincontainer .header .front_text h4 {
   font-weight: 400;
   font-size: 1.5rem;
   color: #e91e63;
@@ -113,19 +117,18 @@
     right: 0;
   }
 }
-.header .front_text h2 {
+.maincontainer .header .front_text h2 {
   font-weight: 600;
   font-size: 5rem;
 }
-.header .front_text h3 {
+.maincontainer .header .front_text h3 {
   font-weight: 400;
   font-size: 2rem;
 }
-.header .front_text p {
+.maincontainer .header .front_text p {
   font-weight: 200;
   font-size: 1rem;
 }
-
 @-webkit-keyframes backcolor {
   0% {
     background-position: 0 0%;
@@ -134,7 +137,6 @@
     background-position: 0 100%;
   }
 }
-
 @keyframes backcolor {
   0% {
     background-position: 0 0%;
@@ -143,14 +145,14 @@
     background-position: 0 100%;
   }
 }
-.about_me {
+.maincontainer .about_me {
   height: 45rem;
   width: 100%;
   background: #000942;
   display: flex;
   justify-content: space-between;
 }
-.about_me .my_img {
+.maincontainer .about_me .my_img {
   top: 8rem;
   height: 30rem;
   width: 30rem;
@@ -159,19 +161,19 @@
   position: relative;
   left: 10rem;
 }
-.about_me .somethin_about_me {
+.maincontainer .about_me .somethin_about_me {
   top: 5rem;
   height: 30rem;
   width: 30rem;
   position: relative;
   right: 15rem;
 }
-.about_me .somethin_about_me h2 {
+.maincontainer .about_me .somethin_about_me h2 {
   color: #fff;
   font-size: 3rem;
   font-weight: 2rem;
 }
-.about_me .somethin_about_me h2::after {
+.maincontainer .about_me .somethin_about_me h2::after {
   content: " ";
   width: 45%;
   height: 2px;
@@ -180,77 +182,79 @@
   top: 3.2rem;
   left: 0;
 }
-.about_me .somethin_about_me p {
+.maincontainer .about_me .somethin_about_me p {
   color: #fff;
   margin-top: 1rem;
   font-size: 1rem;
   word-spacing: 0.2rem;
 }
-.about_me .somethin_about_me p span {
+.maincontainer .about_me .somethin_about_me p span {
   color: #ffea00;
 }
-.about_me .somethin_about_me p span:hover {
+.maincontainer .about_me .somethin_about_me p span:hover {
   color: #e91e63;
 }
-.about_me .somethin_about_me .recent ul {
+.maincontainer .about_me .somethin_about_me .recent ul {
   margin-top: 1rem;
 }
-.about_me .somethin_about_me .recent ul span {
+.maincontainer .about_me .somethin_about_me .recent ul span {
   margin-left: 1.2rem;
   color: #e91e63;
 }
-.about_me .somethin_about_me .recent ul li {
+.maincontainer .about_me .somethin_about_me .recent ul li {
   line-height: 2rem;
   margin-left: 1.2rem;
   list-style: none;
   color: #fff;
 }
-
-.skill {
+.maincontainer .skill {
   background: #000942;
   width: 100%;
   height: 350vh;
 }
-.skill h2 {
+.maincontainer .skill h2 {
   font-size: 2rem;
   margin-left: 50rem;
   color: #fff;
 }
-.skill .timeline {
+.maincontainer .skill .timeline {
   margin-left: 20rem;
   max-width: 120rem;
 }
-.skill .timeline .left-container {
+.maincontainer .skill .timeline .left-container {
   left: 0;
 }
-.skill .timeline .right-container {
+.maincontainer .skill .timeline .right-container {
   left: 40.5%;
 }
-.skill .timeline .container {
+.maincontainer .skill .timeline .container {
   margin-top: 2rem;
   padding: 1rem 5rem;
   position: relative;
   width: 35rem;
   max-width: 100rem;
+  -webkit-animation: movedown 1s linear forwards;
+          animation: movedown 1s linear forwards;
+  opacity: 0;
 }
-.skill .timeline .container .text-box1 {
+.maincontainer .skill .timeline .container .text-box1 {
   padding: 2rem 3rem;
   background: #fff;
   position: relative;
   border-radius: 0.6rem;
   font-size: 15px;
 }
-.skill .timeline .container .text-box1 h1 {
+.maincontainer .skill .timeline .container .text-box1 h1 {
   font-size: 3rem;
   position: relative;
   left: 5rem;
 }
-.skill .timeline .container .text-box1 img {
+.maincontainer .skill .timeline .container .text-box1 img {
   position: relative;
   height: 15rem;
   width: 20rem;
 }
-.skill .timeline .container .text-box1 .left-container-arrow {
+.maincontainer .skill .timeline .container .text-box1 .left-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -261,24 +265,24 @@
   border-left: 2.5rem solid #fff;
   right: -2.5rem;
 }
-.skill .timeline .container .text-box2 {
+.maincontainer .skill .timeline .container .text-box2 {
   padding: 2rem 3rem;
   background: #fff;
   position: relative;
   border-radius: 0.6rem;
   font-size: 15px;
 }
-.skill .timeline .container .text-box2 h1 {
+.maincontainer .skill .timeline .container .text-box2 h1 {
   font-size: 3rem;
   position: relative;
   left: 35%;
 }
-.skill .timeline .container .text-box2 img {
+.maincontainer .skill .timeline .container .text-box2 img {
   height: 15rem;
   width: 18rem;
   position: relative;
 }
-.skill .timeline .container .text-box2 .right-container-arrow {
+.maincontainer .skill .timeline .container .text-box2 .right-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -289,25 +293,25 @@
   border-right: 2.5rem solid #fff;
   left: -2.5rem;
 }
-.skill .timeline .container .text-box3 {
+.maincontainer .skill .timeline .container .text-box3 {
   padding: 2rem 3rem;
   background: #fff;
   position: relative;
   border-radius: 0.6rem;
   font-size: 15px;
 }
-.skill .timeline .container .text-box3 h1 {
+.maincontainer .skill .timeline .container .text-box3 h1 {
   font-size: 3rem;
   position: relative;
   left: 3rem;
 }
-.skill .timeline .container .text-box3 img {
+.maincontainer .skill .timeline .container .text-box3 img {
   height: 15rem;
   width: 20rem;
   position: relative;
   right: 0.5rem;
 }
-.skill .timeline .container .text-box3 .left-container-arrow {
+.maincontainer .skill .timeline .container .text-box3 .left-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -318,24 +322,24 @@
   border-left: 2.5rem solid #fff;
   right: -2.5rem;
 }
-.skill .timeline .container .text-box4 {
+.maincontainer .skill .timeline .container .text-box4 {
   padding: 2rem 3rem;
   background: #fff;
   position: relative;
   border-radius: 0.6rem;
   font-size: 15px;
 }
-.skill .timeline .container .text-box4 h1 {
+.maincontainer .skill .timeline .container .text-box4 h1 {
   font-size: 3rem;
   position: relative;
   left: 35%;
 }
-.skill .timeline .container .text-box4 img {
+.maincontainer .skill .timeline .container .text-box4 img {
   height: 15rem;
   width: 17rem;
   position: relative;
 }
-.skill .timeline .container .text-box4 .right-container-arrow {
+.maincontainer .skill .timeline .container .text-box4 .right-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -346,24 +350,24 @@
   border-right: 2.5rem solid #fff;
   left: -2.5rem;
 }
-.skill .timeline .container .text-box5 {
+.maincontainer .skill .timeline .container .text-box5 {
   padding: 2rem 3rem;
   background: #fff;
   position: relative;
   border-radius: 0.6rem;
   font-size: 15px;
 }
-.skill .timeline .container .text-box5 h1 {
+.maincontainer .skill .timeline .container .text-box5 h1 {
   font-size: 3rem;
   position: relative;
   left: 35%;
 }
-.skill .timeline .container .text-box5 img {
+.maincontainer .skill .timeline .container .text-box5 img {
   height: 15rem;
   width: 18rem;
   position: relative;
 }
-.skill .timeline .container .text-box5 .left-container-arrow {
+.maincontainer .skill .timeline .container .text-box5 .left-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -374,24 +378,24 @@
   border-left: 2.5rem solid #fff;
   right: -2.5rem;
 }
-.skill .timeline .container .text-box6 {
+.maincontainer .skill .timeline .container .text-box6 {
   padding: 2rem 3rem;
   background: #fff;
   position: relative;
   border-radius: 0.6rem;
   font-size: 15px;
 }
-.skill .timeline .container .text-box6 h1 {
+.maincontainer .skill .timeline .container .text-box6 h1 {
   font-size: 3rem;
   position: relative;
   left: 3rem;
 }
-.skill .timeline .container .text-box6 img {
+.maincontainer .skill .timeline .container .text-box6 img {
   height: 15rem;
   width: 18rem;
   position: relative;
 }
-.skill .timeline .container .text-box6 .right-container-arrow {
+.maincontainer .skill .timeline .container .text-box6 .right-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -402,7 +406,51 @@
   border-right: 2.5rem solid #fff;
   left: -2.5rem;
 }
-.skill .timeline::after {
+@-webkit-keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+.maincontainer .skill .timeline .container:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.maincontainer .skill .timeline .container:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.maincontainer .skill .timeline .container:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.maincontainer .skill .timeline .container:nth-child(4) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.maincontainer .skill .timeline .container:nth-child(5) {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+.maincontainer .skill .timeline .container:nth-child(6) {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+.maincontainer .skill .timeline::after {
   content: "";
   position: absolute;
   width: 0.3rem;
@@ -431,48 +479,47 @@
     height: 332vh;
   }
 }
-
-#contact {
+.maincontainer #contact {
   background: #000942;
   width: 100%;
   height: 70vh;
 }
-#contact .container {
+.maincontainer #contact .container {
   margin-left: 18rem;
 }
-#contact .container .row {
+.maincontainer #contact .container .row {
   display: flex;
 }
-#contact .container .row .contact-left {
+.maincontainer #contact .container .row .contact-left {
   flex-basis: 35%;
 }
-#contact .container .row .contact-left h1 {
+.maincontainer #contact .container .row .contact-left h1 {
   color: #fff;
   font-size: 3rem;
   margin-bottom: 3rem;
 }
-#contact .container .row .contact-left h1::before {
+.maincontainer #contact .container .row .contact-left h1::before {
   content: "";
   background-color: #fff;
   width: 45%;
   height: 2px;
   z-index: -1;
 }
-#contact .container .row .contact-left p {
+.maincontainer #contact .container .row .contact-left p {
   color: #fff;
   margin-top: 0.5rem;
   font-size: 1.5rem;
 }
-#contact .container .row .contact-left p i {
+.maincontainer #contact .container .row .contact-left p i {
   color: #e91e63;
   margin-right: 1rem;
   margin-top: 0.5rem;
   font-size: 1.5rem;
 }
-#contact .container .row .contact-left .social-icons {
+.maincontainer #contact .container .row .contact-left .social-icons {
   margin-top: 3rem;
 }
-#contact .container .row .contact-left .social-icons a {
+.maincontainer #contact .container .row .contact-left .social-icons a {
   text-decoration: none;
   font-size: 1.5rem;
   margin-right: 1.5rem;
@@ -480,18 +527,18 @@
   display: inline-block;
   transition: transform 1.5s;
 }
-#contact .container .row .contact-left .social-icons a:hover {
+.maincontainer #contact .container .row .contact-left .social-icons a:hover {
   color: #e91e63;
   transform: rotate(360deg);
 }
-#contact .container .row .contact-right {
+.maincontainer #contact .container .row .contact-right {
   flex-basis: 60%;
 }
-#contact .container .row .contact-right form {
+.maincontainer #contact .container .row .contact-right form {
   width: 100%;
   margin-top: 3rem;
 }
-#contact .container .row .contact-right form input, #contact .container .row .contact-right form textarea {
+.maincontainer #contact .container .row .contact-right form input, .maincontainer #contact .container .row .contact-right form textarea {
   width: 100%;
   border: 0;
   outline: none;
@@ -502,7 +549,7 @@
   color: #000942;
   font-size: 1.2rem;
 }
-#contact .container .row .contact-right form button {
+.maincontainer #contact .container .row .contact-right form button {
   background: #e91e63;
   color: #fff;
   border: 0;
@@ -515,16 +562,21 @@
   margin-top: 1rem;
   font-size: 1.2rem;
 }
-
-#footer {
+.maincontainer #footer {
   background: #010d5b;
   width: 100%;
   height: 7vh;
 }
-#footer .copyright {
+.maincontainer #footer .copyright {
   margin-left: 48%;
 }
-#footer .copyright p {
+.maincontainer #footer .copyright p {
   color: #fff;
   padding-top: 1rem;
+}
+@media screen and (max-width: 60rem) {
+  .maincontainer .maincontainer .header .side_nav {
+    width: 2rem;
+    height: 110vh;
+  }
 }/*# sourceMappingURL=style.css.map */
