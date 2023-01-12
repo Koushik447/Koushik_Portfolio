@@ -129,6 +129,9 @@
   font-weight: 200;
   font-size: 1rem;
 }
+.maincontainer .header .for_small img {
+  display: none;
+}
 @-webkit-keyframes backcolor {
   0% {
     background-position: 0 0%;
@@ -210,7 +213,7 @@
 .maincontainer .skill {
   background: #000942;
   width: 100%;
-  height: 350vh;
+  height: 360vh;
 }
 .maincontainer .skill h2 {
   font-size: 2rem;
@@ -222,7 +225,7 @@
   max-width: 120rem;
 }
 .maincontainer .skill .timeline .left-container {
-  left: 0;
+  left: 8rem;
 }
 .maincontainer .skill .timeline .right-container {
   left: 40.5%;
@@ -231,7 +234,7 @@
   margin-top: 2rem;
   padding: 1rem 5rem;
   position: relative;
-  width: 35rem;
+  width: 27rem;
   max-width: 100rem;
   -webkit-animation: movedown 1s linear forwards;
           animation: movedown 1s linear forwards;
@@ -245,14 +248,15 @@
   font-size: 15px;
 }
 .maincontainer .skill .timeline .container .text-box1 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   position: relative;
-  left: 5rem;
+  left: 2.5rem;
 }
 .maincontainer .skill .timeline .container .text-box1 img {
   position: relative;
+  left: -2rem;
   height: 15rem;
-  width: 20rem;
+  width: 15rem;
 }
 .maincontainer .skill .timeline .container .text-box1 .left-container-arrow {
   height: 0;
@@ -273,13 +277,14 @@
   font-size: 15px;
 }
 .maincontainer .skill .timeline .container .text-box2 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   position: relative;
   left: 35%;
 }
 .maincontainer .skill .timeline .container .text-box2 img {
   height: 15rem;
-  width: 18rem;
+  width: 15rem;
+  left: -2rem;
   position: relative;
 }
 .maincontainer .skill .timeline .container .text-box2 .right-container-arrow {
@@ -301,15 +306,15 @@
   font-size: 15px;
 }
 .maincontainer .skill .timeline .container .text-box3 h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   position: relative;
-  left: 3rem;
+  left: 0.9rem;
 }
 .maincontainer .skill .timeline .container .text-box3 img {
   height: 15rem;
-  width: 20rem;
+  width: 15rem;
+  left: -2rem;
   position: relative;
-  right: 0.5rem;
 }
 .maincontainer .skill .timeline .container .text-box3 .left-container-arrow {
   height: 0;
@@ -330,13 +335,14 @@
   font-size: 15px;
 }
 .maincontainer .skill .timeline .container .text-box4 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   position: relative;
-  left: 35%;
+  left: 30%;
 }
 .maincontainer .skill .timeline .container .text-box4 img {
   height: 15rem;
-  width: 17rem;
+  width: 15rem;
+  left: -2rem;
   position: relative;
 }
 .maincontainer .skill .timeline .container .text-box4 .right-container-arrow {
@@ -364,7 +370,8 @@
 }
 .maincontainer .skill .timeline .container .text-box5 img {
   height: 15rem;
-  width: 18rem;
+  width: 15rem;
+  left: -2rem;
   position: relative;
 }
 .maincontainer .skill .timeline .container .text-box5 .left-container-arrow {
@@ -386,13 +393,14 @@
   font-size: 15px;
 }
 .maincontainer .skill .timeline .container .text-box6 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   position: relative;
-  left: 3rem;
+  left: 1rem;
 }
 .maincontainer .skill .timeline .container .text-box6 img {
   height: 15rem;
-  width: 18rem;
+  width: 15rem;
+  left: -2rem;
   position: relative;
 }
 .maincontainer .skill .timeline .container .text-box6 .right-container-arrow {
@@ -454,7 +462,7 @@
   content: "";
   position: absolute;
   width: 0.3rem;
-  height: 332vh;
+  height: 330vh;
   background: #fff;
   top: 96.9rem;
   left: 50%;
@@ -468,7 +476,7 @@
     height: 0;
   }
   100% {
-    height: 332vh;
+    height: 330vh;
   }
 }
 @keyframes moveline {
@@ -476,7 +484,7 @@
     height: 0;
   }
   100% {
-    height: 332vh;
+    height: 330vh;
   }
 }
 .maincontainer #contact {
@@ -574,9 +582,315 @@
   color: #fff;
   padding-top: 1rem;
 }
-@media screen and (max-width: 60rem) {
-  .maincontainer .maincontainer .header .side_nav {
-    width: 2rem;
-    height: 110vh;
+
+@media only screen and (max-width: 360px) {
+  .maincontainer {
+    width: 100%;
+    overflow: hidden;
+  }
+  .maincontainer .header {
+    height: 55rem;
+    top: -3.9rem;
+    background: #000942;
+  }
+  .maincontainer .header .top_nav {
+    background: #000942;
+    display: none;
+  }
+  .maincontainer .header .side_nav {
+    display: none;
+  }
+  .maincontainer .header .front_text h4 {
+    top: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .maincontainer .header .front_text h2 {
+    margin-top: 4rem;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  .maincontainer .header .front_text h3 {
+    margin-top: 1rem;
+    font-weight: 200;
+    font-size: 1.5rem;
+  }
+  .maincontainer .header .front_text p {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .maincontainer .header .for_small img {
+    display: flex;
+    height: 15rem;
+    position: relative;
+    top: 5rem;
+  }
+  .maincontainer .about_me {
+    height: 35rem;
+    top: -15rem;
+    position: relative;
+    padding: 0 1rem;
+  }
+  .maincontainer .about_me .my_img {
+    display: none;
+  }
+  .maincontainer .about_me .somethin_about_me {
+    left: 2.5rem;
+  }
+  .maincontainer .about_me .somethin_about_me h2 {
+    font-size: 2rem;
+  }
+  .maincontainer .about_me .somethin_about_me h2::after {
+    content: " ";
+    width: 41%;
+    top: 2.5rem;
+  }
+  .maincontainer .about_me .somethin_about_me p {
+    font-size: 0.9rem;
+    word-spacing: 0.2rem;
+    padding: 0 2rem 0 0;
+  }
+  .maincontainer .skill {
+    height: 200vh;
+  }
+  .maincontainer .skill h2 {
+    font-size: 2rem;
+    margin-left: 5rem;
+    margin-top: -15rem;
+  }
+  .maincontainer .skill .timeline {
+    margin-left: 4.4rem;
+  }
+  .maincontainer .skill .timeline .left-container {
+    left: -5.3rem;
+  }
+  .maincontainer .skill .timeline .right-container {
+    left: -5.3rem;
+  }
+  .maincontainer .skill .timeline .container {
+    width: 20rem;
+  }
+  .maincontainer .skill .timeline .container .text-box1 {
+    padding: 2rem 3rem;
+    font-size: 15px;
+    height: 10rem;
+  }
+  .maincontainer .skill .timeline .container .text-box1 h1 {
+    top: -1rem;
+    font-size: 1rem;
+    position: relative;
+    left: 0.5rem;
+  }
+  .maincontainer .skill .timeline .container .text-box1 img {
+    left: -2rem;
+    height: 5rem;
+    width: 8rem;
+  }
+  .maincontainer .skill .timeline .container .text-box1 .left-container-arrow {
+    top: 3rem;
+    z-index: 1;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-right: 1.5rem solid #fff;
+    border-left: 0;
+    left: -1.5rem;
+  }
+  .maincontainer .skill .timeline .container .text-box2 {
+    padding: 2rem 3rem;
+    font-size: 15px;
+    height: 10rem;
+  }
+  .maincontainer .skill .timeline .container .text-box2 h1 {
+    top: -1rem;
+    font-size: 1rem;
+    position: relative;
+    left: 0.5rem;
+  }
+  .maincontainer .skill .timeline .container .text-box2 img {
+    left: -2rem;
+    height: 5rem;
+    width: 8rem;
+  }
+  .maincontainer .skill .timeline .container .text-box2 .right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 3rem;
+    z-index: 1;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-right: 1.5rem solid #fff;
+    left: -1.5rem;
+  }
+  .maincontainer .skill .timeline .container .text-box3 {
+    padding: 2rem 3rem;
+    font-size: 15px;
+    height: 10rem;
+  }
+  .maincontainer .skill .timeline .container .text-box3 h1 {
+    top: -1rem;
+    font-size: 1rem;
+    position: relative;
+    left: 0.5rem;
+  }
+  .maincontainer .skill .timeline .container .text-box3 img {
+    left: -2rem;
+    height: 5rem;
+    width: 8rem;
+  }
+  .maincontainer .skill .timeline .container .text-box3 .left-container-arrow {
+    top: 3rem;
+    z-index: 1;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-right: 1.5rem solid #fff;
+    border-left: 0;
+    left: -1.5rem;
+  }
+  .maincontainer .skill .timeline .container .text-box4 {
+    padding: 2rem 3rem;
+    font-size: 15px;
+    height: 10rem;
+  }
+  .maincontainer .skill .timeline .container .text-box4 h1 {
+    top: -1rem;
+    font-size: 1rem;
+    position: relative;
+    left: 0.5rem;
+  }
+  .maincontainer .skill .timeline .container .text-box4 img {
+    left: -2rem;
+    height: 5rem;
+    width: 8rem;
+  }
+  .maincontainer .skill .timeline .container .text-box4 .right-container-arrow {
+    top: 3rem;
+    z-index: 1;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-right: 1.5rem solid #fff;
+    left: -1.5rem;
+  }
+  .maincontainer .skill .timeline .container .text-box5 {
+    padding: 2rem 3rem;
+    font-size: 15px;
+    height: 10rem;
+  }
+  .maincontainer .skill .timeline .container .text-box5 h1 {
+    top: -1rem;
+    font-size: 1rem;
+    position: relative;
+    left: 0.5rem;
+  }
+  .maincontainer .skill .timeline .container .text-box5 img {
+    left: -2rem;
+    height: 5rem;
+    width: 8rem;
+  }
+  .maincontainer .skill .timeline .container .text-box5 .left-container-arrow {
+    top: 3rem;
+    z-index: 1;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-right: 1.5rem solid #fff;
+    border-left: 0;
+    left: -1.5rem;
+  }
+  .maincontainer .skill .timeline .container .text-box6 {
+    padding: 2rem 3rem;
+    font-size: 15px;
+    height: 10rem;
+  }
+  .maincontainer .skill .timeline .container .text-box6 h1 {
+    top: -1rem;
+    font-size: 1rem;
+    position: relative;
+    left: 0.5rem;
+  }
+  .maincontainer .skill .timeline .container .text-box6 img {
+    left: -2rem;
+    height: 5rem;
+    width: 8rem;
+  }
+  .maincontainer .skill .timeline .container .text-box6 .right-container-arrow {
+    top: 3rem;
+    z-index: 1;
+    border-top: 1.5rem solid transparent;
+    border-bottom: 1.5rem solid transparent;
+    border-right: 1.5rem solid #fff;
+    left: -1.5rem;
+  }
+  .maincontainer .skill .timeline::after {
+    content: "";
+    top: 85rem;
+    height: 161vh;
+    background: #fff;
+    margin-left: -9rem;
+    z-index: 1;
+    -webkit-animation: moveline 10s linear forwards;
+            animation: moveline 10s linear forwards;
+  }
+  @-webkit-keyframes moveline {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 161vh;
+    }
+  }
+  @keyframes moveline {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 161vh;
+    }
+  }
+  .maincontainer #contact {
+    height: 90vh;
+  }
+  .maincontainer #contact .container {
+    margin-top: 8rem;
+    margin-left: 2rem;
+  }
+  .maincontainer #contact .container .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .maincontainer #contact .container .row .contact-left h1 {
+    font-size: 2.5rem;
+  }
+  .maincontainer #contact .container .row .contact-left p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  .maincontainer #contact .container .row .contact-left p i {
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .maincontainer #contact .container .row .contact-right {
+    padding: 0 2rem 0 0;
+  }
+  .maincontainer #contact .container .row .contact-right form input, .maincontainer #contact .container .row .contact-right form textarea {
+    border-radius: 0.3rem;
+    padding: 1.5rem;
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+  }
+  .maincontainer #contact .container .row .contact-right form button {
+    border-radius: 0.3rem;
+    padding: 1rem 2rem;
+    margin-left: 0rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .maincontainer #footer {
+    position: relative;
+  }
+  .maincontainer #footer .copyright {
+    margin-left: 0%;
+  }
+  .maincontainer #footer .copyright p {
+    padding-top: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

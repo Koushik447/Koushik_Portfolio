@@ -137,6 +137,11 @@
                 font-size: 1rem;
             }
         }
+        .for_small{
+            img{
+                display: none;
+            }
+        }
     }
     
     @keyframes backcolor {
@@ -228,7 +233,7 @@
     .skill {
         background: #000942;
         width: 100%;
-        height: 350vh;
+        height: 360vh;
         h2 {
             font-size: 2rem;
             margin-left: 50rem;
@@ -238,7 +243,7 @@
             margin-left: 20rem;
             max-width: 120rem;
             .left-container{
-                left: 0;
+                left: 8rem;
             }
             .right-container{
                 left: 40.5%;
@@ -247,7 +252,7 @@
                 margin-top: 2rem;
                 padding: 1rem 5rem;
                 position: relative;
-                width: 35rem;
+                width: 27rem;
                 max-width: 100rem;
                 animation: movedown 1s linear forwards;
                 opacity: 0;
@@ -258,14 +263,15 @@
                     border-radius: .6rem;
                     font-size: 15px;
                     h1 {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                         position: relative;
-                        left: 5rem;
+                        left: 2.5rem;
                     }
                     img {
                         position: relative;
+                        left: -2rem;
                         height: 15rem;
-                        width: 20rem;
+                        width: 15rem;
                     }
                     .left-container-arrow{
                         height: 0;
@@ -286,13 +292,14 @@
                     border-radius: .6rem;
                     font-size: 15px;
                     h1 {
-                        font-size: 3rem;
+                        font-size:  2.5rem;
                         position: relative;
                         left: 35%;
                     }
                     img {
                         height: 15rem;
-                        width: 18rem;
+                        width: 15rem;
+                        left: -2rem;
                         position: relative;
                     }
                     .right-container-arrow{
@@ -314,15 +321,16 @@
                     border-radius: .6rem;
                     font-size: 15px;
                     h1 {
-                        font-size: 3rem;
+                        font-size: 2.2rem;
                         position: relative;
-                        left: 3rem;
+                        left: .9rem;
                     }
                     img {
                         height: 15rem;
-                        width: 20rem;
+                        width: 15rem;
+                        left: -2rem;
                         position: relative;
-                        right: .5rem;
+                        // right: .5rem;
                     }
                     .left-container-arrow{
                         height: 0;
@@ -344,13 +352,14 @@
                     border-radius: .6rem;
                     font-size: 15px;
                     h1 {
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                         position: relative;
-                        left: 35%;
+                        left: 30%;
                     }
                     img {
                         height: 15rem;
-                        width: 17rem;
+                        width: 15rem;
+                        left: -2rem;
                         position: relative;
                     }
                     .right-container-arrow{
@@ -379,7 +388,8 @@
                     }
                     img {
                         height: 15rem;
-                        width: 18rem;
+                        width: 15rem;
+                        left: -2rem;
                         position: relative;
                     }
                     .left-container-arrow{
@@ -403,14 +413,15 @@
                     font-size: 15px;
     
                     h1 {
-                        font-size: 3rem;
+                        font-size: 2rem;
                         position: relative;
-                        left: 3rem;
+                        left: 1rem;
                     }
     
                     img {
                         height: 15rem;
-                        width: 18rem;
+                        width: 15rem;
+                        left: -2rem;
                         position: relative;
                     }
                     .right-container-arrow{
@@ -461,7 +472,7 @@
             content: '';
             position: absolute;
             width: .3rem;
-            height: 332vh;
+            height: 330vh;
             background: #fff;
             top: 96.9rem;
             left: 50%;
@@ -474,7 +485,7 @@
                 height: 0;
             }
             100%{
-                height: 332vh;
+                height: 330vh;
             }
         }
     }
@@ -579,27 +590,336 @@
         }
     }
     
-    @media screen and (max-width:60rem) {
-      .maincontainer{
-        // width: 100%;
-        .header{
-            // width: 100%;
-            // .top_nav{
-            //     display: none;
-            // }
-
-            .side_nav{
-                // display: none;
-                width: 2rem;
-                height: 110vh;
-
-            }
+   
+}
+@media only screen and (max-width: 360px) {
+    .maincontainer{
+        width: 100%;
+        overflow: hidden;
+      .header{
+        height: 55rem;
+        top: -3.9rem;
+        background: #000942;
+        .top_nav{
+            background: #000942;
+            display: none;
         }
-        
+          .side_nav{
+              display: none;
+          }
+          .front_text{
+            // margin-top: rem;
+            h4 {
+                top: 2.5rem;
+                font-size: 1.5rem;
+            }
+            h2 {
+                margin-top: 4rem;
+                font-weight: 600;
+                font-size: 3rem;
+            }
+    
+            h3 {
+                margin-top: 1rem;
+                font-weight: 200;
+                font-size: 1.5rem;
+            }
+            p {
+                font-weight: 400;
+                font-size: 1rem;
+            }
+          }
+          .for_small{
+            img{
+                display:flex;
+                height: 15rem;
+                position: relative;
+                top: 5rem;
+            }
+          }
       }
 
+      .about_me{
+        height: 35rem;
+        top: -15rem;
+        position: relative;
+        padding:0 1rem ;
+        // left: 5rem;
+        .my_img{
+            display: none;
+        }
+        .somethin_about_me{
+            left: 2.5rem;
+            h2 {
+                font-size: 2rem;
+                
+            }
+            h2::after {
+                content: " ";
+                width: 41%;
+                top: 2.5rem;
+            }
+            p {
+                font-size: .9rem;
+                word-spacing: .2rem;
+                padding:0 2rem 0 0;
+            }
+        }
 
+      }
+      .skill{
+        height: 200vh;
+        h2 {
+            font-size: 2rem;
+            margin-left: 5rem;
+            margin-top: -15rem;
+        }
+        .timeline{
+            margin-left: 4.4rem;
+            // max-width: 120rem;
+            .left-container{
+                left: -5.3rem;
+            }
+            .right-container{
+                left: -5.3rem;
+            }
+            .container{
+                width: 20rem;
+                .text-box1 {
+                    padding: 2rem 3rem;
+                    font-size: 15px;
+                    height: 10rem;
+                    h1 {
+                        top: -1rem;
+                        font-size: 1rem;
+                        position: relative;
+                        left: .5rem;
+                    }
+                    img {
+                        left: -2rem;
+                        height: 5rem;
+                        width: 8rem;
+                    }
+                    .left-container-arrow{
+                        top: 3rem;
+                        z-index: 1;
+                        border-top: 1.5rem solid transparent;
+                        border-bottom: 1.5rem solid transparent;
+                        border-right: 1.5rem solid #fff;
+                        border-left: 0;
+                        left: -1.5rem;
+                    }
+                }
+                .text-box2 {
+                    padding: 2rem 3rem;
+                    font-size: 15px;
+                    height: 10rem;
+                    h1 {
+                        top: -1rem;
+                        font-size: 1rem;
+                        position: relative;
+                        left: .5rem;
+                    }
+                    img {
+                        left: -2rem;
+                        height: 5rem;
+                        width: 8rem;
+                    }
+                    .right-container-arrow{
+                        height: 0;
+                        width: 0;
+                        position: absolute;
+                        top: 3rem;
+                        z-index: 1;
+                        border-top: 1.5rem solid transparent;
+                        border-bottom: 1.5rem solid transparent;
+                        border-right: 1.5rem solid #fff;
+                        left: -1.5rem;
+                    }
+                }
 
+                .text-box3 {
+                    padding: 2rem 3rem;
+                    font-size: 15px;
+                    height: 10rem;
+                    h1 {
+                        top: -1rem;
+                        font-size: 1rem;
+                        position: relative;
+                        left: .5rem;
+                    }
+                    img {
+                        left: -2rem;
+                        height: 5rem;
+                        width: 8rem;
+                    }
+                    .left-container-arrow{
+                        top: 3rem;
+                        z-index: 1;
+                        border-top: 1.5rem solid transparent;
+                        border-bottom: 1.5rem solid transparent;
+                        border-right: 1.5rem solid #fff;
+                        border-left: 0;
+                        left: -1.5rem;
+                    }
+                }
+                .text-box4 {
+                    padding: 2rem 3rem;
+                    font-size: 15px;
+                    height: 10rem;
+                    h1 {
+                        top: -1rem;
+                        font-size: 1rem;
+                        position: relative;
+                        left: .5rem;
+                    }
+                    img {
+                        left: -2rem;
+                        height: 5rem;
+                        width: 8rem;
+                    }
+                    .right-container-arrow{
+                        top: 3rem;
+                        z-index: 1;
+                        border-top: 1.5rem solid transparent;
+                        border-bottom: 1.5rem solid transparent;
+                        border-right: 1.5rem solid #fff;
+                        left: -1.5rem;
+                    }
+                }
+                .text-box5 {
+                    padding: 2rem 3rem;
+                    font-size: 15px;
+                    height: 10rem;
+                    h1 {
+                        top: -1rem;
+                        font-size: 1rem;
+                        position: relative;
+                        left: .5rem;
+                    }
+                    img {
+                        left: -2rem;
+                        height: 5rem;
+                        width: 8rem;
+                    }
+                    .left-container-arrow{
+                        top: 3rem;
+                        z-index: 1;
+                        border-top: 1.5rem solid transparent;
+                        border-bottom: 1.5rem solid transparent;
+                        border-right: 1.5rem solid #fff;
+                        border-left: 0;
+                        left: -1.5rem;
+                    }
+                }
+                .text-box6 {
+                    padding: 2rem 3rem;
+                    font-size: 15px;
+                    height: 10rem;
+    
+                    h1 {
+                        top: -1rem;
+                        font-size: 1rem;
+                        position: relative;
+                        left: .5rem;
+                    }
+    
+                    img {
+                        left: -2rem;
+                        height: 5rem;
+                        width: 8rem;
+                    }
+                    .right-container-arrow{
+                        top: 3rem;
+                        z-index: 1;
+                        border-top: 1.5rem solid transparent;
+                        border-bottom: 1.5rem solid transparent;
+                        border-right: 1.5rem solid #fff;
+                        left: -1.5rem;
+                    }
+                }
 
+            }
+
+        }
+        .timeline::after{
+            content: '';
+            top: 85rem;
+            height: 161vh;
+            background: #fff;
+            margin-left: -9rem;
+            z-index: 1;
+            animation: moveline 10s linear forwards;
+            
+        }
+        @keyframes moveline {
+            0%{
+                height: 0;
+            }
+            100%{
+                height: 161vh;
+            }
+        }
+      }
+      #contact{
+        height: 90vh;
+        .container{
+            margin-top:8rem ;
+            margin-left: 2rem;
+            .row{
+                display: flex;
+                flex-direction: column;
+                .contact-left{
+                   
+                    h1{
+                        font-size: 2.5rem;
+                    }
+                    p{
+                        margin-top: .5rem;
+                        font-size: 1rem;
+                        i{
+                            margin-right: 1rem;
+                            margin-top: .5rem;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+                .contact-right{
+                    padding: 0 2rem 0 0;
+                    form{
+                        input,textarea{
+                            border-radius: .3rem;
+                            padding: 1.5rem;
+                            margin: .5rem 0;
+                            font-size: .8rem;
+                        }
+                        button{
+                            border-radius: .3rem;
+                            padding: 1rem 2rem;
+                            margin-left: 0rem;
+                            margin-top: 1rem;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            
+        }
+      }
+      #footer{
+        position: relative;
+        .copyright{
+            margin-left: 0%;
+            p{
+                padding-top: 1rem;
+            }
+    
+        }
     }
-}
+      
+    }
+
+
+
+
+  }
