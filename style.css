@@ -861,10 +861,10 @@
   }
   .maincontainer #contact {
     overflow: hidden;
-    height: 95vh;
+    height: 105vh;
   }
   .maincontainer #contact .container {
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 2rem;
   }
   .maincontainer #contact .container .row {
