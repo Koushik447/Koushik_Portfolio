@@ -848,7 +848,7 @@
       height: 0;
     }
     100% {
-      height: 161vh;
+      height: 100%;
     }
   }
   @keyframes moveline {
@@ -856,14 +856,15 @@
       height: 0;
     }
     100% {
-      height: 161vh;
+      height: 100%;
     }
   }
   .maincontainer #contact {
-    height: 90vh;
+    overflow: hidden;
+    height: 95vh;
   }
   .maincontainer #contact .container {
-    margin-top: 8rem;
+    margin-top: 3rem;
     margin-left: 2rem;
   }
   .maincontainer #contact .container .row {
@@ -902,7 +903,7 @@
     position: relative;
   }
   .maincontainer #footer .copyright {
-    margin-left: 0%;
+    margin-left: 5%;
   }
   .maincontainer #footer .copyright p {
     padding-top: 1rem;
