@@ -158,11 +158,15 @@
 .maincontainer .about_me .my_img {
   top: 8rem;
   height: 30rem;
-  width: 30rem;
+  width: 27rem;
   background: rgb(255, 222, 8);
   border: 0.3rem solid #fff;
   position: relative;
-  left: 10rem;
+  left: 14rem;
+}
+.maincontainer .about_me .my_img img {
+  height: 29.5rem;
+  width: 26.5rem;
 }
 .maincontainer .about_me .somethin_about_me {
   top: 5rem;
@@ -221,6 +225,7 @@
   color: #fff;
 }
 .maincontainer .skill .timeline {
+  position: relative;
   margin-left: 20rem;
   max-width: 120rem;
 }
@@ -462,10 +467,10 @@
   content: "";
   position: absolute;
   width: 0.3rem;
-  height: 330vh;
+  height: 100%;
   background: #fff;
-  top: 96.9rem;
-  left: 50%;
+  top: 1rem;
+  left: 36.8%;
   margin-left: 5rem;
   z-index: 1;
   -webkit-animation: moveline 10s linear forwards;
@@ -476,7 +481,7 @@
     height: 0;
   }
   100% {
-    height: 330vh;
+    height: 100%;
   }
 }
 @keyframes moveline {
@@ -484,13 +489,14 @@
     height: 0;
   }
   100% {
-    height: 330vh;
+    height: 100%;
   }
 }
 .maincontainer #contact {
   background: #000942;
   width: 100%;
   height: 70vh;
+  overflow: hidden;
 }
 .maincontainer #contact .container {
   margin-left: 18rem;
@@ -658,6 +664,7 @@
     margin-top: -15rem;
   }
   .maincontainer .skill .timeline {
+    position: relative;
     margin-left: 4.4rem;
   }
   .maincontainer .skill .timeline .left-container {
@@ -667,9 +674,11 @@
     left: -5.3rem;
   }
   .maincontainer .skill .timeline .container {
+    position: relative;
     width: 20rem;
   }
   .maincontainer .skill .timeline .container .text-box1 {
+    position: relative;
     padding: 2rem 3rem;
     font-size: 15px;
     height: 10rem;
@@ -695,6 +704,7 @@
     left: -1.5rem;
   }
   .maincontainer .skill .timeline .container .text-box2 {
+    position: relative;
     padding: 2rem 3rem;
     font-size: 15px;
     height: 10rem;
@@ -722,6 +732,7 @@
     left: -1.5rem;
   }
   .maincontainer .skill .timeline .container .text-box3 {
+    position: relative;
     padding: 2rem 3rem;
     font-size: 15px;
     height: 10rem;
@@ -747,6 +758,7 @@
     left: -1.5rem;
   }
   .maincontainer .skill .timeline .container .text-box4 {
+    position: relative;
     padding: 2rem 3rem;
     font-size: 15px;
     height: 10rem;
@@ -771,6 +783,7 @@
     left: -1.5rem;
   }
   .maincontainer .skill .timeline .container .text-box5 {
+    position: relative;
     padding: 2rem 3rem;
     font-size: 15px;
     height: 10rem;
@@ -796,6 +809,7 @@
     left: -1.5rem;
   }
   .maincontainer .skill .timeline .container .text-box6 {
+    position: relative;
     padding: 2rem 3rem;
     font-size: 15px;
     height: 10rem;
@@ -821,7 +835,7 @@
   }
   .maincontainer .skill .timeline::after {
     content: "";
-    top: 85rem;
+    top: 1rem;
     height: 161vh;
     background: #fff;
     margin-left: -9rem;

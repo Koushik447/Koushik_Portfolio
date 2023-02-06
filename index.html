@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortFolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/45c3eef4f5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -44,19 +46,20 @@
     
         </div>
     
-        <div class="about_me">
-            <div class="my_img">
-                <img src="" alt="">
+        <div class="about_me" >
+            <div class="my_img" data-aos="zoom-in">
+                <img src="./Img/IMG20211223120303.png" alt="">
             </div>
     
-            <div class="somethin_about_me">
+            <div class="somethin_about_me" >
                 <h2>About Me</h2>
-                <p>Hello! My name is Koushik Sarkar final year B.Tech Computer Science Student.I enjoy creating new things & I'm passionate about to learn new things.I have a good Knowledge in <span>'JAVA'</span>, <span>'OOPs'</span>, <span>'DBMS'</span>,  <span>'HTML'</span>, <span>'CSS'</span>, <span>'SCSS'</span>, <span>'SQL'</span>, <span>'Bootstrap'</span>.Ability to learn new software and technologies quickly. </p>
+                <p data-aos="fade-up"
+                data-aos-duration="3000">Hello! My name is Koushik Sarkar final year B.Tech Computer Science Student.I enjoy creating new things & I'm passionate about to learn new things.I have a good Knowledge in <span>'JAVA'</span>, <span>'OOPs'</span>, <span>'DBMS'</span>,  <span>'HTML'</span>, <span>'CSS'</span>, <span>'SCSS'</span>, <span>'SQL'</span>, <span>'Bootstrap'</span>.Ability to learn new software and technologies quickly. </p>
                 <br>
                 <p>
                     Here are a few technologies I've been working with recently :-
                 </p>
-                <div class="recent">
+                <div class="recent"data-aos="flip-right">
                     <ul>
                         <li> <span> >> </span> HTML </li>
                         <li> <span> >> </span> CSS </li>
@@ -75,7 +78,10 @@
         <h2>Skill</h2>
         <div class="timeline">
             <div class="container left-container">
-                <div class="text-box1">
+                <div class="text-box1" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900">
                     <h1>HTML</h1>
                     <img src="./Img/Language_img/html5-logo-31813.png" alt="">
                     <span class="left-container-arrow"></span>
@@ -84,7 +90,10 @@
     
     
          <div class="container right-container">
-                <div class="text-box2">
+                <div class="text-box2" data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900">
                     <h1>CSS</h1>
                     <img src="./Img/Language_img/css.png" alt="">
                     <span class="right-container-arrow"></span>
@@ -92,7 +101,10 @@
             </div>
     
             <div class="container left-container">
-                <div class="text-box3">
+                <div class="text-box3" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900">
                     <h1>Java-Script</h1>
                     <img src="./Img/Language_img/JavaScript-Logo.png" alt="">
                     <span class="left-container-arrow"></span>
@@ -100,7 +112,10 @@
             </div>
     
             <div class="container right-container">
-                <div class="text-box4">
+                <div class="text-box4" data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900">
                     <h1>JAVA</h1>
                     <img src="./Img/Language_img/java.png" alt="">
                     <span class="right-container-arrow"></span>
@@ -108,7 +123,10 @@
             </div>
     
             <div class="container left-container">
-                <div class="text-box5">
+                <div class="text-box5" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900">
                     <h1>SQL</h1>
                     <img src="./Img/Language_img/Sql.png" alt="">
                     <span class="left-container-arrow"></span>
@@ -116,7 +134,10 @@
             </div>
     
             <div class="container right-container">
-                <div class="text-box6">
+                <div class="text-box6" data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="900">
                     <h1>C Language</h1>
                     <img src="./Img/Language_img/c-laguage.png" alt="">
                     <span class="right-container-arrow"></span>
@@ -129,7 +150,7 @@
         <div id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="contact-left">
+                    <div class="contact-left" data-aos="flip-left">
                         <h1 class="sub-titel">Contact Me</h1>
                         <p><i class="fa-solid fa-paper-plane"></i> sarkarkoushik447@gmail.com</p>
                         <p><i class="fa-solid fa-square-phone"></i> +91 8538073417</p>
@@ -140,12 +161,24 @@
                             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
-                    <div class="contact-right">
+                    <div class="contact-right" >
                         <form action="">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Massage" rows="6" placeholder="Add Your Massage"></textarea>
-                            <button type="submit" class="btn">Submit</button>
+                            <input data-aos="fade-left"
+                            data-aos-offset="200"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="900" type="text" name="Name" placeholder="Your Name" required>
+                            <input data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="900" type="email" name="Email" placeholder="Your Email" required>
+                            <textarea data-aos="fade-left"
+                            data-aos-offset="200"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="900" name="Massage" rows="6" placeholder="Add Your Massage"></textarea>
+                            <button data-aos="fade-right"
+                            data-aos-offset="100"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="900" type="submit" class="btn">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -161,6 +194,10 @@
 
 
     </div>
+
+    <script>
+        AOS.init();
+      </script>
     
 
     
