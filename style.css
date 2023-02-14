@@ -47,7 +47,7 @@
   padding: 1rem;
 }
 .maincontainer .header .top_nav .btn.btn2 {
-  background: #e91e63;
+  background: linear-gradient(#00bcd4, #e91e63, #3f51b5, #00bcd4);
   color: #fff;
   border: 0;
   outline: 0;
@@ -55,6 +55,11 @@
   padding: 1rem 2rem;
   cursor: pointer;
   text-decoration: none;
+  background-size: 100% 500%;
+  background-position: 0 40%;
+}
+.maincontainer .header .top_nav .btn.btn2:hover {
+  animation: backcolor 2s linear infinite reverse;
 }
 .maincontainer .header .side_nav {
   position: fixed;
@@ -77,7 +82,6 @@
 }
 .maincontainer .header .side_nav .project {
   transform: rotate(-90deg) translateX(50%);
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -98,16 +102,7 @@
   font-size: 1.5rem;
   color: #e91e63;
   position: relative;
-  -webkit-animation: h4left 5s;
-          animation: h4left 5s;
-}
-@-webkit-keyframes h4left {
-  from {
-    left: -20rem;
-  }
-  to {
-    right: 0;
-  }
+  animation: h4left 5s;
 }
 @keyframes h4left {
   from {
@@ -131,14 +126,6 @@
 }
 .maincontainer .header .for_small img {
   display: none;
-}
-@-webkit-keyframes backcolor {
-  0% {
-    background-position: 0 0%;
-  }
-  100% {
-    background-position: 0 100%;
-  }
 }
 @keyframes backcolor {
   0% {
@@ -241,8 +228,7 @@
   position: relative;
   width: 27rem;
   max-width: 100rem;
-  -webkit-animation: movedown 1s linear forwards;
-          animation: movedown 1s linear forwards;
+  animation: movedown 1s linear forwards;
   opacity: 0;
 }
 .maincontainer .skill .timeline .container .text-box1 {
@@ -419,16 +405,6 @@
   border-right: 2.5rem solid #fff;
   left: -2.5rem;
 }
-@-webkit-keyframes movedown {
-  0% {
-    opacity: 1;
-    transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-}
 @keyframes movedown {
   0% {
     opacity: 1;
@@ -440,28 +416,22 @@
   }
 }
 .maincontainer .skill .timeline .container:nth-child(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 .maincontainer .skill .timeline .container:nth-child(2) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
 .maincontainer .skill .timeline .container:nth-child(3) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
 }
 .maincontainer .skill .timeline .container:nth-child(4) {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-delay: 5s;
 }
 .maincontainer .skill .timeline .container:nth-child(5) {
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  animation-delay: 7s;
 }
 .maincontainer .skill .timeline .container:nth-child(6) {
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
+  animation-delay: 9s;
 }
 .maincontainer .skill .timeline::after {
   content: "";
@@ -473,16 +443,7 @@
   left: 36.8%;
   margin-left: 5rem;
   z-index: 1;
-  -webkit-animation: moveline 10s linear forwards;
-          animation: moveline 10s linear forwards;
-}
-@-webkit-keyframes moveline {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
+  animation: moveline 10s linear forwards;
 }
 @keyframes moveline {
   0% {
@@ -546,6 +507,7 @@
   transform: rotate(360deg);
 }
 .maincontainer #contact .container .row .contact-right {
+  overflow: hidden;
   flex-basis: 60%;
 }
 .maincontainer #contact .container .row .contact-right form {
@@ -575,6 +537,14 @@
   margin-left: 20rem;
   margin-top: 1rem;
   font-size: 1.2rem;
+}
+.maincontainer #contact .container .row .contact-right form #success {
+  overflow: hidden;
+  position: relative;
+  top: -12rem;
+  left: 13rem;
+  color: #000942;
+  font-size: 1.5rem;
 }
 .maincontainer #footer {
   background: #010d5b;
@@ -840,16 +810,7 @@
     background: #fff;
     margin-left: -9rem;
     z-index: 1;
-    -webkit-animation: moveline 10s linear forwards;
-            animation: moveline 10s linear forwards;
-  }
-  @-webkit-keyframes moveline {
-    0% {
-      height: 0;
-    }
-    100% {
-      height: 100%;
-    }
+    animation: moveline 10s linear forwards;
   }
   @keyframes moveline {
     0% {
@@ -898,6 +859,14 @@
     margin-left: 0rem;
     margin-top: 1rem;
     font-size: 1.2rem;
+  }
+  .maincontainer #contact .container .row .contact-right form #success {
+    overflow: hidden;
+    position: relative;
+    top: -10rem;
+    left: 15%;
+    color: #000942;
+    font-size: 1rem;
   }
   .maincontainer #footer {
     position: relative;

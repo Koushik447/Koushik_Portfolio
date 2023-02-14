@@ -38,6 +38,7 @@
                         color: #fff;
                         font-size: 1.2rem;
                         transition: .5s;
+                        // background: linear-gradient(#00bcd4, #e91e63, #3f51b5, #00bcd4);
                     }
     
                     a:hover {
@@ -50,7 +51,7 @@
             }
     
             .btn.btn2{
-                background: #e91e63;
+                background: linear-gradient(#00bcd4, #e91e63, #3f51b5, #00bcd4);
                 color: #fff;
                 border: 0;
                 outline: 0;
@@ -58,6 +59,11 @@
                 padding: 1rem 2rem;
                 cursor: pointer;
                 text-decoration: none;
+                background-size: 100% 500%;
+                background-position: 0 40%;
+            }
+            .btn.btn2:hover{
+                animation: backcolor 2s linear infinite reverse;
             }
         }
     
@@ -550,6 +556,7 @@
                     }
                 }
                 .contact-right{
+                    overflow: hidden;
                     flex-basis: 60%;
                     form{
                         width: 100%;
@@ -577,6 +584,14 @@
                             margin-left: 20rem;
                             margin-top: 1rem;
                             font-size: 1.2rem;
+                        }
+                        #success{
+                            overflow: hidden;
+                            position: relative;
+                            top: -12rem;
+                            left: 13rem;
+                            color: #000942;
+                            font-size: 1.5rem;
                         }
                     }
                 }
@@ -916,6 +931,14 @@
                             margin-left: 0rem;
                             margin-top: 1rem;
                             font-size: 1.2rem;
+                        }
+                        #success{
+                            overflow: hidden;
+                            position: relative;
+                            top: -10rem;
+                            left: 15%;
+                            color: #000942;
+                            font-size: 1rem;
                         }
                     }
                 }
