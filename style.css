@@ -40,12 +40,6 @@
   font-size: 1.2rem;
   transition: 0.5s;
 }
-.maincontainer .header .top_nav ul li a:hover {
-  font-size: 1.2rem;
-  border: 0.1rem solid #fff;
-  background-color: #e91e63;
-  padding: 1rem;
-}
 .maincontainer .header .top_nav .btn.btn2 {
   background: linear-gradient(#00bcd4, #e91e63, #3f51b5, #00bcd4);
   color: #fff;
@@ -507,7 +501,6 @@
   transform: rotate(360deg);
 }
 .maincontainer #contact .container .row .contact-right {
-  overflow: hidden;
   flex-basis: 60%;
 }
 .maincontainer #contact .container .row .contact-right form {
