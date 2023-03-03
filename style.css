@@ -39,6 +39,34 @@
   color: #fff;
   font-size: 1.2rem;
   transition: 0.5s;
+  position: relative;
+  padding: 0.4rem;
+}
+.maincontainer .header .top_nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e91e63;
+  transition: all 0.5s linear;
+}
+.maincontainer .header .top_nav ul li a::before {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #e91e63;
+  transition: all 0.5s linear;
+}
+.maincontainer .header .top_nav ul li a:hover::before {
+  width: 100%;
+}
+.maincontainer .header .top_nav ul li a:hover::after {
+  width: 100%;
 }
 .maincontainer .header .top_nav .btn.btn2 {
   background: linear-gradient(#00bcd4, #e91e63, #3f51b5, #00bcd4);
